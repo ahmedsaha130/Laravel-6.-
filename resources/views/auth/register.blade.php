@@ -75,10 +75,17 @@
                         </div>
 
                         <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
+                            <div class="col-md-6 ">
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Register') }}
                                 </button>
+
+                                <div class="col-md-6">
+                                    
+                                        
+                                        <a href="{{ url('callback/facebook') }}">Register With FaceBook</a>
+                                    
+                                </div>
                             </div>
                         </div>
                     </form>

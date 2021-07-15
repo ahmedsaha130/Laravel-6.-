@@ -90,3 +90,7 @@ Route::get('/landingpage','dashboard\AdminController@landingpage');
 Auth::routes(['verify'=>true]);
 
 Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
+
+
+Route::get('/redircert/{services}', 'SocialiteController@redirect');
+Route::get('/callback/{services}', 'SocialiteController@callback');
